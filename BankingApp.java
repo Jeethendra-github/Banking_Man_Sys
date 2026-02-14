@@ -1,5 +1,21 @@
 import java.util.*;
 
+class InvalidEmailException extends Exception {
+    public InvalidEmailException(String message) {
+        super(message);
+    }
+}
+class InvalidAmountException extends Exception {
+    public InvalidAmountException(String message) {
+        super(message);
+    }
+}
+class InvalidAccountException extends Exception {
+    public InvalidAccountException(String message) {
+        super(message);
+    }
+}
+
 interface LoanService {
     void applyForLoan(double amount);
 
